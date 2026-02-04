@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 export default function TradingDashboard() {
   const [timer, setTimer] = useState(120); // 120 seconds = 2 minutes
   const [level, setLevel] = useState("ENTRY WINDOW");
-
   useEffect(() => {
     const interval = setInterval(() => {
       setTimer((prev) => (prev > 0 ? prev - 1 : 120));
